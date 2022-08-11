@@ -1,0 +1,50 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    font-family: Tahoma;
+}
+html
+{
+    height: 100%;
+    font-size: 20px;
+}
+body
+{
+    background: black;
+    margin: 50px;
+}
+nav
+{
+    border: none;
+    text-align: center;
+    line-height: 50px;
+}
+a
+{
+    position: relative;
+    letter-spacing: 1px;
+}
+a::after
+{
+    content: "";
+    position: absolute;
+    background: red;
+    
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: -1px;
+    transition: 0.2s ease 0.1s;
+
+}
+a:hover::after
+{
+    width: 100%;
+    
+}
+
